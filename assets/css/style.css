@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    width: 100vw;
+    height: 84px;
+    padding: 0 10.2489019vw;         /* 1400px/1366=10.2489019vw */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 2 ;
+    background-color: #f7f9fc;
+    box-shadow: 0px 5px 10px black;
+}
+nav img{
+    width: 167px;
+}
+nav .sign{
+    width: 144px;
+    height: 43px;
+    background-color: #27ae60;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+nav .nav-menu{
+    background: none;
+    border: 1px solid #27ae60;
+    padding: 5px;
+    border-radius: 2px;
+    display: none;
+}
+nav .nav-menu i{
+    color: #27ae60;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+.hero{
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.hero .search{
+    position: absolute;
+    color: white;
+}
+.hero h1{
+    max-width: 520px;
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+.search h1{
+    font-size: 60px;
+}
+.find{ 
+    padding-top: 30px; 
+    text-align: center;
+}
+.proparety h1{
+    text-align: center;
+    font-size: 40px;
+}
+.proparety{
+    background-color: #f7f9fc;
+    padding: 100px 0px; 
+}
+.proparety .all-card{
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.proparety .all-card .card{
+    height: 190px;
+    width: 190px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.proparety .all-card .card img{
+    width: 70px;
+}
+.card{
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
+}
+.card h3{
+    padding-top: 15px;
+}
+.sec2 h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.sec2 .all-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.sec2 .all-img img{
+    width: 345px;
+    height: 216px;
+}
+.img1{
+    box-shadow: 5px 5px 5px rgb(224, 224, 224);
+}
+.img1 .red{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.apartment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgb(224, 224, 224);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.apartment .money{
+    border-radius: 20px;
+    padding: 7px;
+    background-color: #27ae60;
+    color: white;
+    margin-left: 20px;
+}
+.apartment .sq{
+    color: gray;
+}
+.condos{
+    margin-right: 30px;
+}
+.sec3 h1{
+    text-align: center;
+    padding-top: 174px;
+    padding-bottom: 50px;
+    font-size: 35px;
+}
+.all-city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.all-city .city img{
+    width: 344px;
+    height: 224px;
+}
+.all-city .city h2{
+    background-color:rgb(183, 186, 192, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+.all-city .city{
+    position: relative;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d2636;
+    width: 100%;
+    height: 100px;
+    margin-top: 90px;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width=992px) {
+    .search h1{
+        font-size: 5px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .nav-menu{
+        display: block;
+    }
+    nav .sign{
+        width: 10.6149vw;
+        min-width: 72px;
+    }
+    nav img{
+        width: 100px;
+    }
+}
